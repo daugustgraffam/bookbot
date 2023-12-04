@@ -5,9 +5,6 @@ def main():
     num_words = get_word_count(text)
     print(f"{num_words} words found in the document")
     num_letters = get_letter_count(text)
-    # print(num_letters) #Uncomment to see the letters
-    # by_letter = list(num_letters)
-    #print(f"Letter {by_letter}")
     sorted_list = chars_to_sorted_list(num_letters)
     for item in sorted_list:
 	    if item["char"].isalpha():
